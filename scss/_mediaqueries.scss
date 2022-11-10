@@ -1,0 +1,215 @@
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    display: block;
+  }
+  .logotext {
+    width: 100%;
+  }
+  .logoimagen {
+    height: 80px;
+  }
+  .h1 {
+    width: 100%;
+    display: grid;
+    gap: 0%;
+    font-size: 20px;
+  }
+  .items {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
+    font: size 20px;
+  }
+
+  .imagen {
+    width: 100%;
+    height: 40%;
+    font-size: 42px;
+  }
+  /*pie*/
+  .lema {
+    font-size: 25px;
+  }
+  .seguinos {
+    font-size: 15px;
+  }
+
+  /*nosotros*/
+
+  .contenedor {
+    display: grid;
+    width: 100%;
+    height: 82vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "caja1 caja2"
+      "caja3 caja4";
+
+    .caja1 {
+      grid-area: caja1;
+      background-image: url("../imagenes/gymfamilia.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .caja2 {
+      grid-area: caja2;
+      background-image: url("../imagenes/perstreiner.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: cover;
+      background-size: cover;
+    }
+
+    .caja3 {
+      grid-area: caja3;
+    }
+    .caja4 {
+      grid-area: caja4;
+    }
+  }
+  /*IMAGENES*/
+  .fotos {
+    display: grid;
+    width: 100%;
+    height: 82vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "foto1 foto2"
+      "foto3 foto4"
+      "foto5 foto6";
+
+    .foto1 {
+      grid-area: foto1;
+      background-image: url("../imagenes/maquina1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-animation: roll-in-left 0.6s ease-out both;
+      animation: roll-in-left 0.6s ease-out both;
+      animation-delay: 200ms;
+    }
+    .foto2 {
+      grid-area: foto2;
+      background-image: url("../imagenes/maquina2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-animation: roll-in-left 0.6s ease-out both;
+      animation: roll-in-left 0.6s ease-out both;
+      animation-delay: 200ms;
+    }
+    .foto3 {
+      grid-area: foto3;
+      background-image: url("../imagenes/maquina3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-animation: roll-in-left 0.6s ease-out both;
+      animation: roll-in-left 0.6s ease-out both;
+      animation-delay: 1s;
+    }
+    .foto4 {
+      grid-area: foto4;
+      background-image: url("../imagenes/maquina4.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-animation: roll-in-left 0.6s ease-out both;
+      animation: roll-in-left 0.6s ease-out both;
+      animation-delay: 1s;
+    }
+    .foto5 {
+      grid-area: foto5;
+      background-image: url("../imagenes/maquina5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-animation: roll-in-left 0.6s ease-out both;
+      animation: roll-in-left 0.6s ease-out both;
+      animation-delay: 2s;
+    }
+    .foto6 {
+      grid-area: foto6;
+      background-image: url("../imagenes/maquina6.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-animation: roll-in-left 0.6s ease-out both;
+      animation: roll-in-left 0.6s ease-out both;
+      animation-delay: 2s;
+    }
+  }
+  /*animaciones*/
+  @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .info {
+    display: grid;
+    width: 100%;
+    height: 250px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "info1 info2"
+      "info3 info4";
+
+    .info1 {
+      grid-area: info1;
+      text-align: center;
+      font-style: italic;
+      font-size: 20px;
+      text-decoration: underline double;
+      padding: 0;
+      background-color: black;
+      color: $primary-color;
+    }
+    .info2 {
+      grid-area: info2;
+      text-align: center;
+      font-style: italic;
+      font-size: 20px;
+      text-decoration: underline double;
+      padding: 0;
+      background-color: black;
+      color: $primary-color;
+    }
+    .info3 {
+      grid-area: info3;
+      width: 200px;
+      height: 100px;
+    }
+    .info4 {
+      grid-area: info4;
+      text-align: start;
+      font-style: italic;
+      font-size: 20px;
+      text-decoration: underline double;
+      padding: 0;
+      background-color: black;
+      color: $primary-color;
+    }
+  }
+}

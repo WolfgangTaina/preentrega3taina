@@ -1,0 +1,835 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;1,600&family=Nunito:ital,wght@0,300;0,400;0,600;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+header .logotext {
+  display: flex;
+  gap: 10px;
+}
+header .logotext .h1 {
+  padding: 30px;
+  font-size: 40px;
+  font-style: italic;
+}
+header .logotext .h1 a {
+  color: white;
+  text-decoration: none;
+}
+header .logotext .h1 a:hover {
+  opacity: 0.7;
+}
+
+.items {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+}
+
+.items a {
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline double;
+}
+
+.items__menu:hover {
+  opacity: 0.7;
+}
+
+.imagen {
+  background-image: url("../imagenes/gymprincipal.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-style: italic;
+  color: white;
+}
+.imagen .bienvenidos {
+  -webkit-animation: text-shadow-pop-left 0.6s both;
+  animation: text-shadow-pop-left 0.6s both;
+  animation-delay: 500ms;
+}
+
+@-webkit-keyframes text-shadow-pop-left {
+  0% {
+    text-shadow: 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    text-shadow: -1px 0 #555, -2px 0 #555, -3px 0 #555, -4px 0 #555, -5px 0 #555, -6px 0 #555, -7px 0 #555, -8px 0 #555;
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+}
+@keyframes text-shadow-pop-left {
+  0% {
+    text-shadow: 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    text-shadow: -1px 0 #555, -2px 0 #555, -3px 0 #555, -4px 0 #555, -5px 0 #555, -6px 0 #555, -7px 0 #555, -8px 0 #555;
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+}
+.pie {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  background-color: black;
+}
+.pie .lema {
+  font-size: 30px;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.seguinos {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+.seguinos:hover {
+  opacity: 0.7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+header .logotext {
+  display: flex;
+  gap: 10px;
+}
+header .logotext .h1 {
+  padding: 30px;
+  font-size: 40px;
+  font-style: italic;
+}
+header .logotext .h1 a {
+  color: white;
+  text-decoration: none;
+}
+header .logotext .h1 a:hover {
+  opacity: 0.7;
+}
+
+.items {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+}
+
+.items a {
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline double;
+}
+
+.items__menu:hover {
+  opacity: 0.7;
+}
+
+.contenedor {
+  display: grid;
+  width: 100%;
+  height: 82vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "caja1 caja2" "caja3 caja4";
+}
+.contenedor .caja1 {
+  grid-area: caja1;
+  background-image: url("../imagenes/gymfamilia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor .caja2 {
+  grid-area: caja2;
+  background-image: url("../imagenes/perstreiner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor .caja3 {
+  grid-area: caja3;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+.contenedor .caja4 {
+  grid-area: caja4;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.contenedor > div {
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: white;
+}
+
+.pie {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  background-color: black;
+}
+.pie .lema {
+  font-size: 30px;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.seguinos {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+.seguinos:hover {
+  opacity: 0.7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+header .logotext {
+  display: flex;
+  gap: 10px;
+}
+header .logotext .h1 {
+  padding: 30px;
+  font-size: 40px;
+  font-style: italic;
+}
+header .logotext .h1 a {
+  color: white;
+  text-decoration: none;
+}
+header .logotext .h1 a:hover {
+  opacity: 0.7;
+}
+
+.items {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+}
+
+.items a {
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline double;
+}
+
+.items__menu:hover {
+  opacity: 0.7;
+}
+
+.fotos {
+  display: grid;
+  width: 100%;
+  height: 82vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
+}
+.fotos .foto1 {
+  grid-area: foto1;
+  background-image: url("../imagenes/maquina1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 200ms;
+}
+.fotos .foto2 {
+  grid-area: foto2;
+  background-image: url("../imagenes/maquina2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 1s;
+}
+.fotos .foto3 {
+  grid-area: foto3;
+  background-image: url("../imagenes/maquina3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 2s;
+}
+.fotos .foto4 {
+  grid-area: foto4;
+  background-image: url("../imagenes/maquina4.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 200ms;
+}
+.fotos .foto5 {
+  grid-area: foto5;
+  background-image: url("../imagenes/maquina5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 1s;
+}
+.fotos .foto6 {
+  grid-area: foto6;
+  background-image: url("../imagenes/maquina6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 2s;
+}
+
+/*animaciones*/
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.pie {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  background-color: black;
+}
+.pie .lema {
+  font-size: 30px;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.seguinos {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+.seguinos:hover {
+  opacity: 0.7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+header .logotext {
+  display: flex;
+  gap: 10px;
+}
+header .logotext .h1 {
+  padding: 30px;
+  font-size: 40px;
+  font-style: italic;
+}
+header .logotext .h1 a {
+  color: white;
+  text-decoration: none;
+}
+header .logotext .h1 a:hover {
+  opacity: 0.7;
+}
+
+.items {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+}
+
+.items a {
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline double;
+}
+
+.items__menu:hover {
+  opacity: 0.7;
+}
+
+.info {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "info1 info2" "info3 info4";
+}
+.info .info1 {
+  grid-area: info1;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.info .info2 {
+  grid-area: info2;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.info .info3 {
+  grid-area: info3;
+  width: 600px;
+  height: 450px;
+}
+.info .info4 {
+  grid-area: info4;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+.pie {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  background-color: black;
+}
+.pie .lema {
+  font-size: 30px;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.seguinos {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+.seguinos:hover {
+  opacity: 0.7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+header .logotext {
+  display: flex;
+  gap: 10px;
+}
+header .logotext .h1 {
+  padding: 30px;
+  font-size: 40px;
+  font-style: italic;
+}
+header .logotext .h1 a {
+  color: white;
+  text-decoration: none;
+}
+header .logotext .h1 a:hover {
+  opacity: 0.7;
+}
+
+.items {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+}
+
+.items a {
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline double;
+}
+
+.items__menu:hover {
+  opacity: 0.7;
+}
+
+.datos {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5 1fr);
+  grid-template-areas: "dato1" "dato2" "dato3" "dato4" "dato5";
+}
+.datos .dato1 {
+  grid-area: dato1;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline double;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.datos .dato2 {
+  grid-area: dato2;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.datos .dato3 {
+  grid-area: dato3;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.datos .dato4 {
+  grid-area: dato4;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.datos .dato5 {
+  grid-area: dato5;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    display: block;
+  }
+  .logotext {
+    width: 100%;
+  }
+  .logoimagen {
+    height: 80px;
+  }
+  .h1 {
+    width: 100%;
+    display: grid;
+    gap: 0%;
+    font-size: 20px;
+  }
+  .items {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
+    font: size 20px;
+  }
+  .imagen {
+    width: 100%;
+    height: 40%;
+    font-size: 42px;
+  }
+  /*pie*/
+  .lema {
+    font-size: 25px;
+  }
+  .seguinos {
+    font-size: 15px;
+  }
+  /*nosotros*/
+  .contenedor {
+    display: grid;
+    width: 100%;
+    height: 82vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "caja1 caja2" "caja3 caja4";
+  }
+  .contenedor .caja1 {
+    grid-area: caja1;
+    background-image: url("../imagenes/gymfamilia.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .contenedor .caja2 {
+    grid-area: caja2;
+    background-image: url("../imagenes/perstreiner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+  }
+  .contenedor .caja3 {
+    grid-area: caja3;
+  }
+  .contenedor .caja4 {
+    grid-area: caja4;
+  }
+  /*IMAGENES*/
+  .fotos {
+    display: grid;
+    width: 100%;
+    height: 82vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
+  }
+  .fotos .foto1 {
+    grid-area: foto1;
+    background-image: url("../imagenes/maquina1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 200ms;
+  }
+  .fotos .foto2 {
+    grid-area: foto2;
+    background-image: url("../imagenes/maquina2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 200ms;
+  }
+  .fotos .foto3 {
+    grid-area: foto3;
+    background-image: url("../imagenes/maquina3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 1s;
+  }
+  .fotos .foto4 {
+    grid-area: foto4;
+    background-image: url("../imagenes/maquina4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 1s;
+  }
+  .fotos .foto5 {
+    grid-area: foto5;
+    background-image: url("../imagenes/maquina5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 2s;
+  }
+  .fotos .foto6 {
+    grid-area: foto6;
+    background-image: url("../imagenes/maquina6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 2s;
+  }
+  /*animaciones*/
+  @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .info {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "info1 info2" "info3 info4";
+  }
+  .info .info1 {
+    grid-area: info1;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline double;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
+  .info .info2 {
+    grid-area: info2;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline double;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
+  .info .info3 {
+    grid-area: info3;
+    width: 200px;
+    height: 100px;
+  }
+  .info .info4 {
+    grid-area: info4;
+    text-align: start;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline double;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

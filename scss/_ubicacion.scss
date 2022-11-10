@@ -1,0 +1,122 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+
+  .logotext {
+    display: flex;
+    gap: 10px;
+
+    .h1 {
+      padding: 30px;
+      font-size: 40px;
+      font-style: italic;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+.items {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+}
+
+.items a {
+  color: $primary-color;
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+.active {
+  text-decoration: underline double;
+}
+
+.items__menu:hover {
+  opacity: 0.7;
+}
+.info {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "info1 info2"
+    "info3 info4";
+
+  .info1 {
+    grid-area: info1;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline double;
+    padding: 30px;
+    background-color: black;
+    color: $primary-color;
+  }
+  .info2 {
+    grid-area: info2;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline double;
+    padding: 30px;
+    background-color: black;
+    color: $primary-color;
+  }
+  .info3 {
+    grid-area: info3;
+    width: 600px;
+    height: 450px;
+  }
+  .info4 {
+    grid-area: info4;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline double;
+    padding: 30px;
+    background-color: black;
+    color: $primary-color;
+  }
+}
+.pie {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  background-color: black;
+
+  .lema {
+    font-size: 30px;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+  }
+}
+.redes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+}
+.seguinos {
+  text-decoration: none;
+  font-style: italic;
+  color: $primary-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
